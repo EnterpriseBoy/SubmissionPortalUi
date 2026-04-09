@@ -1,0 +1,47 @@
+<div class="layout-wrapper">
+  
+  <!-- Top Navbar -->
+<!-- Top bar: Logo -->
+<div id="menuBar1" class="menu-wrapper">
+    <div class="menu-inner d-flex align-items-center py-2">
+        <a class="main_logo" href="#">
+            <img class="logo" src="/assets/img/logo.png" alt="Logo">
+        </a>
+    </div>
+</div>
+
+<!-- Bottom bar: Navigation -->
+<div id="menuBar2" class="menu-wrapper">
+    <div class="menu-inner">
+        <nav>
+            <ul id="top_menu" class="nav nav-pills">
+                <li class="nav-item"><a href="#" class="nav-link active">Home</a></li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link"
+                       onclick="loadPartial('/Navigation/Announcements', '#pageContent'); return false;">
+                        Announcements
+                    </a>
+                </li>
+
+                <li class="nav-item"><a class="nav-link" href="/Public/FAQs">FAQs</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Public/GeneralInformation">General Information</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Public/Contacts">Contacts</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Public/UsagePolicies">Usage Policies</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Account/Register">Register</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+  <!-- Page Content -->
+  <main class="main-content">
+    <router-outlet />
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© Copyright 2015 <a href="http://www.hma.eu" target="_blank">HMA.eu</a> CESP / Common European Submission Portal</p>
+  </footer>
+
+</div>
