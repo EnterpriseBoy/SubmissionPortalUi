@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { PRIMENG_IMPORTS } from '../../primeng.imports';
 
 @Component({
   selector: 'app-faq',
-  imports: [],
+  standalone: true,
+  imports: [...PRIMENG_IMPORTS],
   templateUrl: './faq.html',
   styleUrl: './faq.css',
 })

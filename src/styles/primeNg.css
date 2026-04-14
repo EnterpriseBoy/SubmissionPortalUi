@@ -1,0 +1,9 @@
+.button-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.p-button {
+  border-radius: 6px;
+  min-width: 160px;
+}
